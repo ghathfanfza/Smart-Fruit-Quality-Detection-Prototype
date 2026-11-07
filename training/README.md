@@ -3,7 +3,7 @@
 Model kualitas jeruk dilatih sebagai **klasifikasi citra** dengan **YOLOv8n-cls** untuk dua kelas: `good` dan `bad`.
 
 **Dataset:** sekitar 2.000 gambar jeruk, dibagi 1.000 untuk training dan 1.000 untuk validasi.
-Dataset tidak disimpan di repositori. Sumber dan lisensi: [isi sumber dataset].
+Dataset tidak disimpan di repositori. Dataset diambil melalui pengambilan citra secara manual menggunakan skrip.
 
 ```
 datasets/
@@ -28,5 +28,3 @@ python training/train.py
 ```
 Bobot terbaik tersimpan di `runs/classify/train/weights/best.pt`. Salin ke `models/best.pt` untuk dipakai
 skrip `edge/sorter_edge.py`.
-
-**Hasil:** [isi top-1 accuracy validasi dan tempel confusion matrix dari `runs/classify/train/`].
