@@ -22,8 +22,3 @@ Topologi hierarkis di Cisco Packet Tracer untuk mendukung sistem Smart Fruit Qua
 
 **Berkas:**
 - `OrangeField.pkt`: file topologi Packet Tracer
-- `core-switch-config.txt`: running-config multilayer switch
-- `acl.txt`: ACL dan cara pemasangannya
-- `dhcp-pools.txt`: pool DHCP di router
-
-TODO: tambahkan gambar topologi (`topology.png`) ke folder ini.
