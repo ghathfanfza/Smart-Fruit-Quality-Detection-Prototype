@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+temp_index.html
+k8s/postgres-secret.yaml
+models/*.pt
+*.log
+runs/
+datasets/
+firmware/**/secrets.h
