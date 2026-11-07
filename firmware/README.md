@@ -9,11 +9,10 @@
 
 | Komponen | Keterangan |
 |---|---|
-| ESP32 | Board: [isi tipe, mis. ESP32 DevKit V1] |
+| ESP32 | Board: ESP32 DevKit V1 |
 | Servo 1 (pendorong) | GPIO 25, bergerak 0° ke 180° lalu kembali ke 0° |
 | Servo 2 (gerbang) | GPIO 26, 90° untuk jalur bagus dan 0° untuk jalur jelek (standby 90°) |
-| Servo | Tipe: [isi, mis. SG90] |
-| Kamera | [isi tipe], terhubung ke laptop |
+| Kamera | Action Cam B-Pro , terhubung ke laptop |
 
 ## Perintah
 
