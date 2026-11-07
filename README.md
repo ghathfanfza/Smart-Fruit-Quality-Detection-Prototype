@@ -1,10 +1,9 @@
 # Smart Fruit Quality Sorter
 
-Sistem penyortir jeruk otomatis berbasis **AIoT**: kamera dan model **YOLO** menilai kualitas jeruk ("bagus" atau "jelek"), **ESP32** menggerakkan servo pemilah, dan log deteksi mengalir secara real-time melalui **Apache Spark** di klaster **Kubernetes (K3s)** ke **PostgreSQL**, lalu ditampilkan di dashboard **Grafana**. Jaringan pendukungnya dirancang dengan VLAN, Inter-VLAN routing, DHCP, dan ACL.
+Sistem penyortir jeruk otomatis berbasis **AIoT**: kamera dan model **YOLO** menilai kualitas jeruk, **ESP32** menggerakkan servo pemilah, dan log deteksi mengalir secara real-time melalui **Apache Spark** di klaster **Kubernetes (K3s)** ke **PostgreSQL**, lalu ditampilkan di dashboard **Grafana**. Jaringan pendukungnya dirancang dengan VLAN, Inter-VLAN routing, DHCP, dan ACL.
 
 Dikerjakan sebagai projek akhir mata kuliah Big Data, Teknologi Server, dan Perancangan Jaringan (D-IV Teknologi Rekayasa Internet, Sekolah Vokasi UGM, 2026).
 
-> [Tambahkan GIF atau foto prototipe di sini: `docs/images/demo.gif`]
 
 ## Fitur
 
@@ -132,20 +131,7 @@ SELECT kategori, SUM(jumlah) AS total FROM sortir_jeruk GROUP BY kategori;
 - Pada sesi uji, dashboard Grafana menampilkan panel "Total Jeruk Bagus" dan "Total Jeruk Jelek" yang diperbarui otomatis setiap ada data baru.
 - Jaringan: DHCP memberi IP sesuai VLAN, komunikasi antar VLAN berjalan lewat multilayer switch, dan ACL memblokir Security PC dari server (lihat `network/`).
 
-> [Tambahkan akurasi validasi model (top-1 accuracy), confusion matrix dari `runs/classify/train/`, dan screenshot dashboard di sini]
 
 ## Dokumentasi
 
 Laporan lengkap ada di `docs/laporan/`: Big Data, Teknologi Server, dan Perancangan Jaringan.
-
-## Peran dan tim
-
-Peran saya: **Programmer dan Project Manager**. Anggota tim: [isi nama, setelah mendapat izin].
-
-## Catatan keamanan
-
-Kredensial tidak disimpan di repositori. Gunakan `.env` (di-`.gitignore`) dan Kubernetes Secret. Ganti semua password contoh sebelum menjalankan sistem.
-
-## Lisensi
-
-[Pilih lisensi, mis. MIT, lalu tambahkan file LICENSE]
