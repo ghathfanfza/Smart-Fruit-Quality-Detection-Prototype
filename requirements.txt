@@ -1,0 +1,4 @@
+ultralytics
+opencv-python
+pyserial
+pyspark==3.5.0
