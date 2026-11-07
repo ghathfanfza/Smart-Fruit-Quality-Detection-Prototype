@@ -65,8 +65,7 @@ spark/     penerima log dan penulisan ke PostgreSQL, dashboard HTML
 k8s/       manifest Kubernetes (Spark, PostgreSQL+Grafana, Nginx)
 sql/       skema tabel
 scripts/   sinkronisasi dashboard ke Nginx
-network/   desain jaringan (VLAN, DHCP, ACL)
-docs/      laporan dan gambar
+network/   desain jaringan
 models/    bobot model YOLO (tidak di-commit)
 ```
 
